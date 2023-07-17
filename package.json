@@ -1,5 +1,5 @@
 {
-  "name": "taste-nft",
+  "name": "prony",
   "version": "1.0.0",
   "homepage": "https://PushOk322.github.io/react-gh-pages",
   "description": "",
@@ -64,9 +64,11 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
+    "date-fns": "^2.30.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^6.11.2",
+    "recharts": "^2.7.2",
     "webpack-bundle-analyser": "^1.4.0"
   }
 }
