@@ -6,12 +6,17 @@ import BoardList from "../components/BigComponents/BoardList.jsx";
 import CreateBoard from "../components/BigComponents/CreateBoard.jsx";
 import EditBoard from "../components/BigComponents/EditBoard.jsx";
 import DeleteBoard from "../components/BigComponents/DeleteBoard.jsx";
+import PostList from "../components/BigComponents/PostList.jsx";
+import PostVoters from "../components/BigComponents/PostVoters.jsx";
+import ImportPost from "../components/BigComponents/ImportPost.jsx";
+import EditPost from "../components/BigComponents/EditPost.jsx";
+import AddPost from "../components/BigComponents/AddPost.jsx";
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 // const BigComponents = [Dashboard, BoardList];
-const BigComponents = [Dashboard, BoardList, CreateBoard, EditBoard, DeleteBoard];
+const BigComponents = [Dashboard, BoardList, CreateBoard, EditBoard, DeleteBoard, PostList, PostVoters, ImportPost, AddPostEditPost,  ];
 const Main = () => {
 
     const [currentComponent, setCurrentComponent] = useState(0);

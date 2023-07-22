@@ -27,6 +27,18 @@
     font-size: 32px;
     line-height: 38.4px;
     letter-spacing: 0px;
+    display: flex;
+    flex-direction: row;
+    div{
+        margin: 7px 0 0 18px;
+        color: var(--272557, #272557);
+    
+        /* h3 Heading */
+        font-family: Nunito-600;
+        font-size: 24px;
+        line-height: 28.8px;
+        /* 120% */
+    }
 }
 
 .dashboard {
