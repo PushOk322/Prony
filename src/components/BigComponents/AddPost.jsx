@@ -46,7 +46,7 @@ const AddPost = ({ components, setCurrentComponent }) => {
                     <button className="history-path__button" onClick={() => { setCurrentComponent(0) }}>
                         Dashboard  /
                     </button>
-                    <button className="history-path__button" onClick={() => { setCurrentComponent(0) }}>
+                    <button className="history-path__button" onClick={() => { setCurrentComponent(5) }}>
                         Posts  /
                     </button>
                     Edit post

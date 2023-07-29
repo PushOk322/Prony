@@ -37,7 +37,19 @@
             height: 38px;
             padding: 3px 0px 0  31px;
         }
+
+        &.add{
+            width: 114px;
+            height: 38px;
+            // padding: 3px 0px 0 31px;
+        }
+
+        &.segment{
+            width: 180px;
+            height: 37px;
+        }
     }
+
 }
 
 
@@ -199,6 +211,11 @@
 
         &.posts{
             height: 241px;
+        }
+
+        &.post-view{
+            margin-top: -1300px;
+            height: 380px;
         }
     }
 

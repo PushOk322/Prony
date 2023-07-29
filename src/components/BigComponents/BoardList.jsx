@@ -247,14 +247,14 @@ const BoardList = ({ components, setCurrentComponent }) => {
                             </div>
 
 
-                            {/* ВЕСТИМЕ В СТОРІНКИ ТЕГІВ */}
-                            <div className="boards-menu__row" >
+                            
+                            <div className="boards-menu__row" onClick={() => { setCurrentComponent(11) }}>
                                 <img src="./img/boards-menu-icon-3.svg" alt="" className="boards-menu__icon" />
                                 <div className="boards-menu__row-text">List board tags</div>
                             </div>
 
-                            {/* ВЕСТИМЕ В СТОРІНКУ ПОСТІВ */}
-                            <div className="boards-menu__row" >
+                            
+                            <div className="boards-menu__row" onClick={() => { setCurrentComponent(3) }}>
                                 <img src="./img/boards-menu-icon-4.svg" alt="" className="boards-menu__icon" />
                                 <div className="boards-menu__row-text">Edit board post</div>
                             </div>
@@ -263,7 +263,7 @@ const BoardList = ({ components, setCurrentComponent }) => {
                                     setNotifyActive(1);
                                     setMenuActive(false);
                                 } else {
-                                    setCurrentComponent(3)
+                                    setCurrentComponent(4)
                                 }
                             }}>
                                 <img src="./img/boards-menu-icon-5.svg" alt="" className="boards-menu__icon" />
@@ -271,7 +271,7 @@ const BoardList = ({ components, setCurrentComponent }) => {
                             </div>
 
                             {/* ВЕСТИМЕ В СТОРІНКИ ПОСТІВ */}
-                            <div className="boards-menu__row" >
+                            <div className="boards-menu__row" onClick={() => { setCurrentComponent(5) }}>
                                 <img src="./img/boards-menu-icon-6.svg" alt="" className="boards-menu__icon" />
                                 <div className="boards-menu__row-text">View posts</div>
                             </div>

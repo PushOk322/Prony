@@ -25,26 +25,26 @@ const SideBar = ({ components, setCurrentComponent }) => {
                             Boards
                         </div>
                     </div>
-                    <div className={components === 2 ? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(2) }}>
-                        <img src="./img/nav-icon-3.svg" alt="" className={components === 2 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
+                    <div className={components === 5 ? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(5) }}>
+                        <img src="./img/nav-icon-3.svg" alt="" className={components === 5 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
                         <div className="sidebar__nav-text">
                             Posts
                         </div>
                     </div>
-                    <div className={components === 3 ? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(3) }}>
-                        <img src="./img/nav-icon-4.svg" alt="" className={components === 3 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
+                    <div className={components === 11 ? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(11) }}>
+                        <img src="./img/nav-icon-4.svg" alt="" className={components === 11 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
                         <div className="sidebar__nav-text">
                             Statuses
                         </div>
                     </div>
-                    <div className={components === 4 ? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(4) }}>
-                        <img src="./img/nav-icon-5.svg" alt="" className={components === 4 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
+                    <div className={components === 15 ? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(15) }}>
+                        <img src="./img/nav-icon-5.svg" alt="" className={components === 15 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
                         <div className="sidebar__nav-text">
                             Users
                         </div>
                     </div>
-                    <div className={components === 5? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(5) }}>
-                        <img src="./img/nav-icon-6.svg" alt="" className={components === 5 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
+                    <div className={components === 20? "sidebar__nav-box active" : "sidebar__nav-box"} onClick={() => { setCurrentComponent(5) }}>
+                        <img src="./img/nav-icon-6.svg" alt="" className={components === 20 ? "sidebar__nav-icon active" : "sidebar__nav-icon"} />
                         <div className="sidebar__nav-text">
                             Changelog
                         </div>

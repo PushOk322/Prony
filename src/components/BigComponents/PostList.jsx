@@ -150,7 +150,7 @@ const PostList = ({ components, setCurrentComponent }) => {
 
                     <div className="posts-buttons">
                         <div className="posts-buttons__export-import">
-                            <button className="posts-buttons__button">
+                            <button className="posts-buttons__button" onClick={() => { setCurrentComponent(7) }}>
                                 <img src="./img/post-import-icon.svg" alt="" className="posts-buttons__icon" />
                                 Import
                             </button>
@@ -178,8 +178,8 @@ const PostList = ({ components, setCurrentComponent }) => {
 
 
 
-                            <div className="post-head__filter tags">
-                                <div className="post-head__preview tags" onClick={() => { handleFiltersDropClick(2) }}>
+                            <div className="post-head__filter drop-tags">
+                                <div className="post-head__preview drop-tags" onClick={() => { handleFiltersDropClick(2) }}>
 
                                     <div className={activeTagsCount != 0 ? " post-head__chosen active" : "post-head__chosen"}>
                                         {activeTagsCount}
@@ -606,12 +606,12 @@ const PostList = ({ components, setCurrentComponent }) => {
                     <div className="post-line"></div>
 
                     <div className={pagination === 1 ? "post-list active" : "post-list"}>
-                        <div className="post-list__row">
-                            <div className="post-list__author">
+                        <div className="post-list__row" >
+                            <div className="post-list__author" onClick={() => { setCurrentComponent(6) }}>
                                 <img src="./img/post-list-avatar-1.svg" alt="" className="post-list__avatar" />
                                 <div className="post-list__author-name">Konnor Castro</div>
                             </div>
-                            <div className="post-list__row-content">
+                            <div className="post-list__row-content" onClick={() => { setCurrentComponent(6) }}>
                                 <div className="post-list__row-upper">
                                     <div className="post-list__post-name">Send status updates back through Intercom</div>
                                     <div className="post-list__time">3 min ago</div>
@@ -1666,26 +1666,26 @@ const PostList = ({ components, setCurrentComponent }) => {
                         <img src="./img/boards-menu-cross.svg" onClick={() => { setMenuActive(false) }} alt="" className="boards-menu__cross" />
                         <div className="boards-menu__rows">
                             <div className={menuRowActive === true ? "boards-menu__row active" : "boards-menu__row"} onClick={() => {
-                                setNotifyActive(2);
                                 setMenuActive(false);
+                                setCurrentComponent(10);
                             }
                             }>
                                 <img src="./img/posts-menu-icon-1.svg" alt="" className={menuRowActive === true ? "boards-menu__icon active" : "boards-menu__icon"} />
                                 <div className="boards-menu__row-text">Edit post</div>
                             </div>
-                            <div className="boards-menu__row" onClick={() => { setCurrentComponent(3) }}>
+                            <div className="boards-menu__row" onClick={() => { setCurrentComponent(9) }}>
                                 <img src="./img/posts-menu-icon-2.svg" alt="" className="boards-menu__icon" />
                                 <div className="boards-menu__row-text">Delete post</div>
                             </div>
 
 
                             <div className="boards-menu__row" >
-                                <img src="./img/posts-menu-icon-3.svg" alt="" className="boards-menu__icon" />
+                                <img src="./img/posts-menu-icon-3.svg" alt="" className="boards-menu__icon" onClick={() => { setCurrentComponent(6) }} />
                                 <div className="boards-menu__row-text">View post</div>
                             </div>
 
                             <div className="boards-menu__row" >
-                                <img src="./img/posts-menu-icon-4.svg" alt="" className="boards-menu__icon" />
+                                <img src="./img/posts-menu-icon-4.svg" alt="" className="boards-menu__icon" onClick={() => { setCurrentComponent(9) }} />
                                 <div className="boards-menu__row-text">Merge post</div>
                             </div>
                         </div>
